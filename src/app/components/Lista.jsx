@@ -64,8 +64,8 @@ const TablaMovimientos = ({ movimientos, titulo, total, onDeleteMovimiento }) =>
       <thead>
         <tr>
           <th>{titulo}</th>
-          <th>Fecha</th>
           <th>Descripción</th>
+           <th>Fecha</th>
           <th>Monto</th>
           <th></th>
         </tr>
@@ -74,8 +74,8 @@ const TablaMovimientos = ({ movimientos, titulo, total, onDeleteMovimiento }) =>
         {movimientos.map((movimiento) => (
           <tr key={movimiento.id}>
             <td>{movimiento.categoria}</td>
-            <td>{movimiento.fecha}</td>
             <td>{movimiento.descripcion}</td>
+            <td>{movimiento.fecha}</td>
             <td>${movimiento.monto}</td>
             <td>
               <button className="eliminar-btn icon-close" onClick={() => onDeleteMovimiento(movimiento.id)}>
