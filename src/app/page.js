@@ -12,7 +12,7 @@ const App = () => {
   // "Función asincrónica para guardar movimientos en un archivo JSON"
   const saveMovimientosToFile = async () => {
     try {
-      const response = await fetch("data.json", {
+      const response = await fetch("data", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
